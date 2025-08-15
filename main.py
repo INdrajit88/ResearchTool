@@ -13,8 +13,10 @@ try:
     asyncio.get_running_loop()
 except RuntimeError:
     asyncio.set_event_loop(asyncio.new_event_loop())
+    
+if not os.environ.get("GOOGLE_API_KEY"):
+    os.environ["api_key"] = st.secrets['GOOGLE_API_KEY']
 
-api_key = st.secrets("GOOGLE_API_KEY")
 st.title("Research Tool")
 st.sidebar.title("New Article Url")
 
