@@ -1,0 +1,8 @@
+streamlit
+pickle-mixin
+langchain
+langchain-google-genai
+faiss-cpu
+unstructured
+huggingface-hub
+sentence-transformers
