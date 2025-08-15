@@ -1,6 +1,5 @@
 import os
 import asyncio
-from dotenv import load_dotenv
 import streamlit as st
 import time
 from langchain.chains.qa_with_sources.retrieval import RetrievalQAWithSourcesChain
