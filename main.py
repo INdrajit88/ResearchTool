@@ -14,8 +14,7 @@ try:
 except RuntimeError:
     asyncio.set_event_loop(asyncio.new_event_loop())
 
-load_dotenv()
-api_key = os.getenv("GOOGLE_API_KEY")
+api_key = st.secrets("GOOGLE_API_KEY")
 st.title("Research Tool")
 st.sidebar.title("New Article Url")
 
