@@ -6,3 +6,4 @@ faiss-cpu
 unstructured
 huggingface-hub
 sentence-transformers
+langchain_community
